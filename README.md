@@ -28,7 +28,7 @@ Your job is to develop a streaming data analytics view that displays live time s
 
 On form submit, the component should make incremental requests to the mock data source to fetch the live simulation data in chunks. This data should then we displayed in one or more plots and the plotted data should scroll from right to left in an animated fashion, appending new data to the end as it is fetch. As a bonus, try to smooth the addition of new data beyond simply appending large chunks as they are fetched.
 
-The data source is mocked via the `getData` function in `src/data.ts`. Below is the interface for the async function:
+The data source is mocked via the `getData` function in `src/data.ts`. Below is the interface to the async function:
 
 ```typescript
 import { getData } from './data';
