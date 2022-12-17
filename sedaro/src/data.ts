@@ -1,13 +1,14 @@
-export const getData = (start: number, stop: number, width: number | null = null) => {
+export const getData = (
+  start: number,
+  stop: number,
+  width: number = 0.00001157407 // 1 second in days
+) => {
   return new Promise((resolve, reject) => {
-    if (start < 0 || start >= stop) {
+    if (start < 0 || start >= stop || width <= 0) {
       reject({ error: 'Invalid range' });
     }
     if (Math.random() > 0.7) {
       reject({ error: 'Unknown error' });
-    }
-    if (!width) {
-      width = 0.00001157407; // 1 second in days
     }
     const data: { [key: string]: number[] } = {
       t: [],
