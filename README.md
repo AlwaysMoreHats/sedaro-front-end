@@ -8,8 +8,6 @@ Please note that if you end up getting to a solution that you aren't happy with 
 
 If you have any questions or issues while you work through this problem or if you get stuck, please contact Bas Welsh at sebastian.welsh@sedarotech.com.
 
----
-
 ## Setup
 
 1. Clone this repository.
@@ -19,8 +17,6 @@ If you have any questions or issues while you work through this problem or if yo
 1. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
    - The page will reload if you make edits
    - You will also see any lint errors in the console
-
----
 
 ## Problem Statement
 
