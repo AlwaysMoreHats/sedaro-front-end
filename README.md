@@ -13,10 +13,10 @@ If you have any questions or issues while you work through this problem or if yo
 1. Clone this repository.
    - Please note that **only** cloning via HTTPS is supported
    - Please **do not** commit changes to any branch of this repository. If you would like to use git, you may fork this repository to create a private repo of your own
-1. `cd` into the `sedaro` directory and run `yarn start` to start the application
+1. `cd` into the `sedaro` directory, and run `yarn install` and `yarn start` to start the application
 1. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
    - The page will reload if you make edits
-   - You will also see any lint errors in the console
+   - You will also see any lint errors in the command line
 
 ## Problem Statement
 
@@ -26,7 +26,7 @@ Your job is to develop a streaming data analytics view that displays live time s
 - Resolution: The resolution of the time series data to display (ex. 1 minute, 1 hour, 1 day)
 - A "Simulate" button to start the simulation
 
-On form submit, the component should make incremental requests to the mock data source to fetch the live simulation data in chunks. This data should then we displayed in one or more plots and the plotted data should scroll from right to left in an animated fashion, appending new data to the end as it is fetch. As a bonus, try to smooth the addition of new data beyond simply appending large chunks as they are fetched.
+On form submit, the component should make incremental requests to the mock data source to fetch the live simulation data in chunks. This data should then be displayed in one or more plots, and the plotted data should scroll from right to left in an animated fashion, appending new data to the end as it is fetch. As a bonus, try to smooth the addition of new data beyond simply appending large chunks as they are fetched.
 
 The data source is mocked via the `getData` function in `src/data.ts`. Below is the interface to the async function:
 
