@@ -62,3 +62,7 @@ Data from the mock data source is structured as a Stream, where a Stream is defi
 1. Please use React functional components and hooks to build out your solution
 1. Please use TypeScript
 1. You may use whatever OSS libraries you would like in your implementation as long as they are available through NPM
+
+### Wireframe
+
+![Wireframe](./sedaro/multimedia/wireframe.png)
