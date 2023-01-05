@@ -2,7 +2,7 @@
 
 The goal of this exercise is to gain a better understanding of your ability to think through and solve relevant challenges related to Front-End engineering at Sedaro. This is an opportunity for you to show off your personal strengths, so we're interested in seeing more than just a working solution. Get creative, the problem is intentionally open-ended.
 
-Within the next `7` days, attempt the following mini-project and return your solution as a `.zip` archive containing the full project and any notes on how to setup and run your specific solution. As important as your solution, we are interested in understanding your thought process and your ability to clearly communicate your approach so a writeup may also be included.
+Within the next `7` days, attempt the following mini-project and return your solution as a `.zip` archive containing the full project (less anything that would be .gitignored such as `node_modules`) and any notes on how to setup and run your specific solution. As important as your solution, we are interested in understanding your thought process and your ability to clearly communicate your approach so a writeup may also be included.
 
 Please note that if you end up getting to a solution that you aren't happy with or that is a dead end, document why and we will call that good enough. Please don't invest too much time. A writeup of why a solution is insufficient and how you might approach it differently often tells us what we need to know. And as always, don't be afraid to really show off your skills and creativity.
 
