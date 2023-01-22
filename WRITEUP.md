@@ -24,6 +24,10 @@ I thought it was simple enough that I wouldn't need a Date library, but in hinds
 
 Skipped this, as a significant amount of my time was wrangling my dev environment to work at all.
 
+## Wireframe
+
+I did not see that there was a wireframe.
+
 # App Usage
 
 The user can pick a datetime (down to the ms) for start and end, with the resolution (Step size) also being customizable in both number and units (so they don't have figure out what fractional day an hour is). The Simulate button generates a new set of charts. This does not auto-refresh as the input is changed.
