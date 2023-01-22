@@ -16,9 +16,10 @@ code {
 .App {
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   gap: 30px;
   flex-wrap: wrap;
+  height: 100vh;
 }
 
 .panel {
