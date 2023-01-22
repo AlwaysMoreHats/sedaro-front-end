@@ -1,10 +1,8 @@
 import React, { useEffect, useReducer, useState } from 'react';
 import SimulationDetailsForm, { FormData } from './Components/SimulationDetailsForm';
+import Simulation from './Components/Simulation';
 import fetchChartData from './scripts/fetchChartData';
-import { RawChartData } from './types'
-
-
-type ChartData = { t: number, x: number, y: number, z: number }[]
+import { ChartData, RawChartData } from './types'
 
 type AppContextType = {
   isLoading: boolean;
@@ -58,6 +56,7 @@ const App = () => {
 
       fetchCall
       .then((data) => {
+        console.log('done')
         dispatch({ type: 'ADD', data })
       })
       .catch(() => console.error(`Time Range ${start}-${stop} timed out`))
@@ -73,6 +72,7 @@ const App = () => {
 
   return <div className="App">
       <SimulationDetailsForm isLoading={isLoading} onSubmit={(data) => {setFormData(data); dispatch({ type: 'RESET'})}} />
+      <Simulation stepSize={formData?.width} chartData={chartData}/>
     </div>;
 };
 

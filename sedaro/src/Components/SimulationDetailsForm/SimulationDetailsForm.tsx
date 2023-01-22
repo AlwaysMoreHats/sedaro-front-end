@@ -43,7 +43,7 @@ export default function SimulationDetailsForm({ isLoading = false, onSubmit }: P
         width: conversion[stepUnit](stepSize) / conversion.days(1),
     }
 
-    return <form className="simulationForm" onSubmit={(e) => {e.stopPropagation(); e.preventDefault(); return false}}>
+    return <form className="simulationForm panel" onSubmit={(e) => {e.stopPropagation(); e.preventDefault(); return false}}>
         <p className="inputRow"><FormInput label="Start" type="datetime-local" value={startTime} onChange={onChange(setStartTime)}/> days</p>
         <p className="inputRow"><FormInput label="End" type="datetime-local" value={endTime} onChange={onChange(setEndTime)} /> days</p>
         <p className="inputRow longRow">

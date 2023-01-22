@@ -25,11 +25,5 @@
 
 .submitButton {
     width: 100%;
-    margin-top: 10px;
-}
-
-.simulationForm {
-    display: inline-block;
-    border-radius: 10px;
-    padding: 30px;
+    margin-top: 15px;
 }

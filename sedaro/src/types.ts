@@ -4,3 +4,5 @@ export type RawChartData = {
   y: number[];
   z: number[];
 }
+
+export type ChartData = { t: number, x: number, y: number, z: number }[]
