@@ -19,6 +19,7 @@ export type FormData = {
 }
 
 type Props = {
+    isLoading: boolean;
     onSubmit: (formData: FormData) => void;
 }
 
@@ -30,7 +31,7 @@ function dateStringToDateTimeInputString(d: string) {
     return new Date(d).toISOString().replace(/Z/, '');
 }
 
-export default function SimulationDetailsForm({ onSubmit }: Props) {
+export default function SimulationDetailsForm({ isLoading = false, onSubmit }: Props) {
     const [startTime, setStartTime] = useState(dateStringToDateTimeInputString(new Date().toISOString()))
     const [endTime, setEndTime] = useState(dateStringToDateTimeInputString(new Date(Date.now() + conversion.days(1)).toISOString()))
     const [stepSize, setStepSize] = useState(1)
@@ -49,6 +50,6 @@ export default function SimulationDetailsForm({ onSubmit }: Props) {
             <FormInput label="Step Size" type="number" value={stepSize} onChange={onChange(setStepSize)} />
             <FormSelect label="Units" options={Object.keys(conversion)} value={stepUnit} onChange={onChange(setStepUnit)}/>
         </p>
-        <button type="button" disabled={formData.start > formData.stop} className="submitButton primaryButton" onClick={() => onSubmit(formData)}>Simulate</button>
+        <button type="button" disabled={isLoading || formData.start > formData.stop} className="submitButton primaryButton" onClick={() => onSubmit(formData)}>Simulate</button>
     </form>
 }
