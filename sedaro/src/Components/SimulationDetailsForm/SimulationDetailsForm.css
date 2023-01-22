@@ -1,0 +1,35 @@
+.formInput {
+    display: block;
+    width: 65px;
+    height: 20px;
+    box-sizing: border-box;
+}
+
+.formInput[type='datetime-local'] {
+    width: 175px;
+}
+
+.formLabel {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.inputRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 5px;
+    margin-top: 0;
+}
+
+.submitButton {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.simulationForm {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 30px;
+}
