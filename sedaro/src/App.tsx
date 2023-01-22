@@ -43,9 +43,7 @@ const App = () => {
   const [chartData, dispatch] = useReducer(chartDataReducer, [])
 
   useEffect(() => {
-    console.log(formData)
     if (!formData) {
-      console.log('bad')
       return
     }
 
@@ -72,8 +70,6 @@ const App = () => {
     isLoading,
     formData,
   }
-
-  console.log(chartData)
 
   return <div className="App">
       <SimulationDetailsForm isLoading={isLoading} onSubmit={(data) => {setFormData(data); dispatch({ type: 'RESET'})}} />

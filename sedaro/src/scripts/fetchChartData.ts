@@ -5,7 +5,6 @@ const fetchChartData = async (start: number, stop: number, width: number) => {
     for (let retries = 5; retries > 0; retries--) {
         try {
         const data = await getData(start, stop, width) as RawChartData
-        console.log(data)
         return data;
         } catch (e) {
         const err = e as { error: string }
